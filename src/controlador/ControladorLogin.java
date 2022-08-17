@@ -28,6 +28,8 @@ public class ControladorLogin {
         
         if((user != null) || (usuario.equals("admin") && password.equals("admin")) || (usuario.equals("test") && password.equals("test"))) {
             JOptionPane.showMessageDialog(null, "Te has conectado correctamente!");
+            ControladorPrincipal.mostrar(user);
+            ocultar();
         } else {
             JOptionPane.showMessageDialog(null, "El nombre de usuario y/o contraseña que has ingresado es incorrecto.");
         }
