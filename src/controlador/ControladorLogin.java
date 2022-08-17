@@ -1,5 +1,6 @@
 package controlador;
 
+import modelo.Database;
 import vistas.VistaLogin;
 
 public class ControladorLogin {
@@ -18,6 +19,6 @@ public class ControladorLogin {
     }
     
     public static void botonIniciarSesion() {
-        
+        Database db = new Database();
     }
 }
